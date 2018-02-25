@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'seidr-components'
+import { Button, Label } from 'seidr-components'
 
 import '../assets/stylesheets/base.scss';
 
@@ -8,9 +8,10 @@ import '../assets/stylesheets/base.scss';
 const App = ({ name }) => {
   return (
     <div>
-      <h1>Hello, {name}!</h1>
+      <Label>Hello, {name}!</Label>
       <Button
         bgColor="orange"
+        size="large"
       >
         Button
       </Button>
