@@ -9,7 +9,11 @@ const App = ({ name }) => {
   return (
     <div>
       <h1>Hello, {name}!</h1>
-      <Button>Click Me!</Button>
+      <Button
+        bgColor="orange"
+      >
+        Button
+      </Button>
     </div>
   );
 };
