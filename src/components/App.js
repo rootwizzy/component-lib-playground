@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Label } from 'seidr-components'
+import { Button, Label, Header } from 'seidr-components'
 
 import '../assets/stylesheets/base.scss';
 
@@ -8,13 +8,28 @@ import '../assets/stylesheets/base.scss';
 const App = ({ name }) => {
   return (
     <div>
-      <h1> Component Library </h1>
+      <Header size="1"> Component Libary</Header>
       <hr></hr>
 
-      <Label>Hello, {name}!</Label>
+      <Header size="2">Headers</Header>
+
+      <Header size="5">Header 5</Header>
+      <Header size="4">Header 4</Header>
+      <Header size="3">Header 3</Header>
+      <Header size="2">Header 2</Header>
+      <Header size="1">Header 1</Header>
+
+      <Header size="2">Labels</Header>
+      <br></br>
+      <Label size="small">Small Label</Label>
+      <br></br>
+      <Label size="medium">Medium Label</Label>
+      <br></br>
+      <Label size="large">Large Label</Label>
+
 
       {/* Add Button Group or non-inline default */}
-      <h2> Buttons </h2>
+      <Header size="2">Buttons </Header>
       <Button bgColor="green" size="small">
         Small Button
       </Button>
@@ -40,7 +55,7 @@ const App = ({ name }) => {
       <br></br>
 
       <Button bgColor="blue" size="extraWide">
-        Wide Button
+        Extra Wide Button
       </Button>
 
       <Button bgColor="purple" size="fullWidth">
