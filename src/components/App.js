@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Label, Header } from 'seidr-components'
+import { Button, Label, Header, InputText } from 'seidr-components'
 
 import '../assets/stylesheets/base.scss';
 
@@ -61,6 +61,10 @@ const App = ({ name }) => {
       <Button bgColor="purple" size="fullWidth">
         Full Width Button
       </Button>
+
+      <Header size="2">Inputs</Header>
+      <InputText></InputText>
+
     </div>
   );
 };
